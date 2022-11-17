@@ -227,13 +227,13 @@ describe('esPositivo(numero)', function() {
 describe('agregarSimboloExclamacion(str)', function() {
   it('Deberia agregar un signo de exclamacion al final del string', function() {
     expect(agregarSimboloExclamacion('hello world')).toBe('hello world!');
-    expect(agregarSimboloExclamacion('Soy Henry')).toBe('Soy Henry!');
+    expect(agregarSimboloExclamacion('hello world')).toBe('hello world!');
   });
 });
 
 describe('combinarNombres(firstName, lastName)', function() {
   it('Deberia devolver los strings combinados con un espacio en el medio', function() {
-    expect(combinarNombres('hello', 'world')).toBe('hello world');
+    expect(combinarNombres('Soy', 'Henry')).toBe('Soy Henry');
     expect(combinarNombres('Soy', 'Henry')).toBe('Soy Henry');
   });
 });
